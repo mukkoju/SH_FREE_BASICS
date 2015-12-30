@@ -25,7 +25,7 @@ $prfWidth = $pfImg["data"]["width"];
 $prfHeight = $pfImg["data"]["height"];
 
 //genrating image
-$IntialImg = imagecreatefrompng("screen.png");
+$IntialImg = imagecreatefrompng("screen1.png");
 //$logoTxt = imagecreatefrompng("logo.png");
 $profileImage = imagecreatefromjpeg($prfUrl);
 $white = imagecolorallocate($IntialImg, 255, 255, 255);
