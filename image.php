@@ -10,7 +10,7 @@ $db =  new PDO('mysql:host=localhost;dbname=saddahaq_facebook_apps', 'root', 'vi
 $tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$db->quote($id));
 $res = $tmp->fetch(PDO::FETCH_ASSOC); 
 $time = time();
-
+        
 if($res){
   return $data['id'];
 }
@@ -34,7 +34,8 @@ $font = '/var/www/FREE_BASICS/maiandra.ttf';
 //imagettftext($IntialImg, 30, 0, 140, 400, $white, $font, $data['name']);
 //var_dump($pfImg);
 //place profile image
-imagecopymerge($IntialImg, $profileImage, 0, 0, 0, 0, $prfWidth, $prfHeight, 40);
+//imagecopymerge($IntialImg, $profileImage, 0, 0, 0, 0, $prfWidth, $prfHeight, 0);
+imagecopy($profileImage, $IntialImg, 0, 0, 0, 0, $prfWidth, $prfHeight);
 //imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
 
 
@@ -42,6 +43,6 @@ $imageName = 'images/'.$id.'_Pic.png';
 
 //save image
 header('Content-type: image/png');
-$save = imagepng($IntialImg, $imageName, 9);
+$save = imagepng($profileImage, $imageName, 9);
 
 return array('img'=>$imageName);
