@@ -5,7 +5,13 @@
         <meta property="og:title" content='I support Digital India but not Free Basics' />
         <meta property="og:image" content="http://saddahaq.co/say_no.jpg" />
         <meta property="og:url" content='http://saddahaq.co' />
-        <meta property="og:description" content='I support Digital India but not Free Basics' />
+        <meta property="og:description" content='Change your profie picture in protest of Free Basics' />
+        <!--twitter-->
+        <meta property="twiter:twitter:domain" content="SaddaHaq.co" />
+        <meta property="twiter:title" content='I support Digital India but not Free Basics' />
+        <meta property="twiter:image:src" content="http://saddahaq.co/say_no.jpg" />
+        <meta property="twiter:url" content='http://saddahaq.co' />
+        <meta property="twiter:description" content='Change your profie picture in protest of Free Basics' />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
