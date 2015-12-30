@@ -114,9 +114,10 @@
                     $("#share").on("click", function () {
                       var hst = $('body').data('host');
                       var img = $('#gen-img').attr('src');
+                      var msg = $('#comment').val();
                       FB.api('/me/photos', 'post', {
                             url: hst+img,
-                            message: $('#comment').val();
+                            message: msg
                         }, function (response) {
                             if (response && response.id){
                                 $('#close').click();
