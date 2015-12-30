@@ -3,7 +3,7 @@ $data = $_POST;
 $id = $data['id'];
 
 //DB functionality
-$db =  new PDO('mysql:host=localhost;dbname=saddahaq_facebook_apps', 'root', 'dambo');
+$db =  new PDO('mysql:host=localhost;dbname=saddahaq_facebook_apps', 'root', 'vivenfarms');
 $tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$db->quote($id));
 $res = $tmp->fetch(PDO::FETCH_ASSOC); 
 $time = time();
