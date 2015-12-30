@@ -62,7 +62,7 @@
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button>
         <div class="img-lst">
-          <?php $images = scandir('images/', 1);?>
+          <?php $images = scandir('images/');?>
            <?php $i= 0; foreach ($images as $image){   
              if($i != 0 && $i != 1) { ?>
             <img src="images/<?= $image?>"/>
