@@ -116,7 +116,7 @@
                       var img = $('#gen-img').attr('src');
                       FB.api('/me/photos', 'post', {
                             url: hst+img,
-                            message: 'Upload demo'
+                            message: $('#comment').val();
                         }, function (response) {
                             if (response && response.id){
                                 $('#close').click();
