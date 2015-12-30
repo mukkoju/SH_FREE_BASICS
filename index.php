@@ -18,6 +18,13 @@
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
         <style type="text/css">
+            body{
+                background: #c736c0;
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c736c0), color-stop(100%,#69269d));
+                background: -webkit-linear-gradient(to right, #c736c0 0%,#69269d 100%);
+                background: linear-gradient(to right, #c736c0 0%,#69269d 100%);
+                width: 100%;
+            }
             .cntr{
                 text-align: center;
             }
@@ -46,6 +53,7 @@
                font-weight: 400 !important;  
                margin-top: 120px;
                text-shadow: 0px 2px 3px #353535;
+               color: white;
             }
             .img-lst{
               width: 48%;
@@ -56,13 +64,16 @@
                 max-width: 14%;
                 margin: 1px;
             }
+            .sb-ttl{
+                color: white;
+            }
         </style>
     </head>
     <body data-host="<?= "http://".$_SERVER[HTTP_HOST] ?>">
         <!-- Modal -->
         <div class="cntr">
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
-        <h4>Login with facebook to change your profile picture in protest of free Basics</h4>
+        <h4 class="sb-ttl">Login with facebook to change your profile picture in protest of free Basics</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
         <!--<a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>-->
         <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
