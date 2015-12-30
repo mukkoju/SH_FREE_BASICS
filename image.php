@@ -31,7 +31,7 @@ $font = '/var/www/FREE_BASICS/maiandra.ttf';
 //imagettftext($IntialImg, 30, 0, 140, 400, $white, $font, $data['name']);
 //var_dump($pfImg);
 //place profile image
-imagecopymerge($IntialImg, $profileImage, 0, 0, 0, 0, $prfWidth, $prfHeight, 50);
+imagecopymerge($IntialImg, $profileImage, 0, 0, 0, 0, $prfWidth, $prfHeight, 40);
 //imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
 
 
