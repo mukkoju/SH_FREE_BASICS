@@ -94,7 +94,7 @@
                                             type: 'post',
                                             data: resp,
                                             success: function(r) {
-                                              $('#gen-img').attr('src', 'images/'+resp.id+'_Pic.png');
+                                              $('#gen-img').attr('src', '/images/'+resp.id+'_Pic.png');
                                               $('.modal').modal('show');  
                                             }
                                         });
@@ -114,7 +114,6 @@
                     $("#share").on("click", function () {
                       var hst = $('body').data('host');
                       var img = $('#gen-img').attr('src');
-                      
                       FB.api('/me/photos', 'post', {
                             url: hst+img,
                             message: 'Upload demo'
