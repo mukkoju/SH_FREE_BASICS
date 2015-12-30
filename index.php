@@ -53,7 +53,7 @@
                         <img id="gen-img" src="screen1248.png" style="max-width: 64%"/>
                         <textarea style="width: 64%; margin: 16px auto;" class="form-control" rows="2" id="comment" placeholder="Say something about this"></textarea>
                         <div class="checkbox">
-                          <label><input type="checkbox" value="">Set as my profile picture</label>
+                          <!--<label><input type="checkbox" value="">Set as my profile picture</label>-->
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -84,28 +84,23 @@
                     });
                 };
                 $('#login').click(function(){  
-                    FB.getLoginStatus(function (response) {
-                        if (response.status === 'connected' || response.status === 'not_authorized') {
-                            FB.login(function (response) {
-                                if (response.authResponse) {
-                                    FB.api('/me?fields=name,email,id', function (resp) {
-                                        $.ajax({
-                                            url: '/image.php',
-                                            type: 'post',
-                                            data: resp,
-                                            success: function(r) {
-                                              $('#gen-img').attr('src', '/images/'+resp.id+'_Pic.png');
-                                              $('.modal').modal('show');  
-                                            }
-                                        });
-                                    });
-                                } else {
-//                                    window.location.reload();
-                                }
-                              }, {scope: 'email,publish_actions'});
-                        } else {
-                        }
-                    });
+                  FB.login(function (response) {
+                              if (response.authResponse) {
+                                  FB.api('/me?fields=name,email,id', function (resp) {
+                                      $.ajax({
+                                          url: '/image.php',
+                                          type: 'post',
+                                          data: resp,
+                                          success: function(r) {
+                                            $('#gen-img').attr('src', '/images/'+resp.id+'_Pic.png');
+                                            $('.modal').modal('show');  
+                                          }
+                                      });
+                                  });
+                              } else {
+//                                window.location.reload();
+                              }
+                  }, {scope: 'email,publish_actions'});
                 });
                 
                     
@@ -121,7 +116,8 @@
                         }, function (response) {
                             if (response && response.id){
                                 $('#close').click();
-                                window.open('https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1', "_blank", "width=400, height=400");
+//                                window.open('https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1', "_blank", "width=400, height=400");
+                                  window.location = 'https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1';
                                 console.log('Photo uploaded', response.id);
                               }
                             else{
