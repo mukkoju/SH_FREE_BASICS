@@ -1,6 +1,11 @@
 <html>
     <head>
         <title>I support Digital India but not Free Basics</title>
+        <meta property="og:site_name" content="SaddaHaq.co" />
+        <meta property="og:title" content='I support Digital India but not Free Basics' />
+        <meta property="og:image" content="http://saddahaq.co/say_no.jpg" />
+        <meta property="og:url" content='http://saddahaq.co' />
+        <meta property="og:description" content='I support Digital India but not Free Basics' />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
