@@ -1,6 +1,6 @@
 <html>
-
     <head>
+        <title>I support Digital India but not Free Basics</title>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
@@ -50,7 +50,7 @@
                         <h4 class="modal-title" id="myModalLabel">Share Picture</h4>
                     </div>
                     <div class="modal-body">
-                        <img id="gen-img" src="screen1248.png" style="max-width: 64%"/>
+                        <img id="gen-img" src="say_no.jpg" style="max-width: 64%"/>
                         <textarea style="width: 64%; margin: 16px auto;" class="form-control" rows="2" id="comment" placeholder="Say something about this"></textarea>
                         <div class="checkbox">
                           <!--<label><input type="checkbox" value="">Set as my profile picture</label>-->
@@ -126,5 +126,5 @@
                         });
                     });  
             </script>
-
     </body>
+    </html>
