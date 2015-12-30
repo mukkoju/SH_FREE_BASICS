@@ -143,7 +143,8 @@
                       var msg = $('#comment').val();
                       FB.api('/me/photos', 'post', {
                             url: hst+img,
-                            message: msg
+                            message: msg,
+                            is_hidden: true
                         }, function (response) {
                             if (response && response.id){
                               
