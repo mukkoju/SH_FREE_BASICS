@@ -20,7 +20,7 @@ $font = '/var/www/FREE_BASICS/maiandra.ttf';
 //var_dump($pfImg);
 //place profile image
 imagecopymerge($IntialImg, $profileImage, 0, 0, 0, 0, $prfWidth, $prfHeight, 50);
-imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
+//imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
 
 
 $imageName = 'images/'.$id.'_Pic.png';
