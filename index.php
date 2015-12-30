@@ -4,13 +4,13 @@
         <link rel="icon" type="image/png" href="favicon.ico">
         <meta property="og:site_name" content="SaddaHaq.co" />
         <meta property="og:title" content='I support Digital India but not Free Basics' />
-        <meta property="og:image" content="http://saddahaq.co/dev.png" />
+        <meta property="og:image" content="http://saddahaq.co/grid.jpg" />
         <meta property="og:url" content='http://saddahaq.co' />
         <meta property="og:description" content='Change your profie picture in protest of Free Basics' />
         <!--twitter-->
         <meta property="twiter:twitter:domain" content="SaddaHaq.co" />
         <meta property="twiter:title" content='I support Digital India but not Free Basics' />
-        <meta property="twiter:image:src" content="http://saddahaq.co/dev.png" />
+        <meta property="twiter:image:src" content="http://saddahaq.co/grid.jpg" />
         <meta property="twiter:url" content='http://saddahaq.co' />
         <meta property="twiter:description" content='Change your profie picture in protest of Free Basics' />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -63,7 +63,9 @@
         <div class="cntr">
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
         <h4>Login with facebook to change your profile picture in protest of free Basics</h4>
-        <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button>
+        <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
+<!--        <a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>
+        <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>-->
         <div class="img-lst">
           <?php $images = scandir('images/');?>
            <?php $i= 0; foreach ($images as $image){   
