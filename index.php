@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>I support Digital India but not Free Basics</title>
+        <link rel="icon" type="image/png" href="favicon.ico">
         <meta property="og:site_name" content="SaddaHaq.co" />
         <meta property="og:title" content='I support Digital India but not Free Basics' />
         <meta property="og:image" content="http://saddahaq.co/dev.png" />
