@@ -88,7 +88,7 @@
                         if (response.status === 'connected' || response.status === 'not_authorized') {
                             FB.login(function (response) {
                                 if (response.authResponse) {
-                                    FB.api('/me', {fields: "id,email,name"}, function (resp) {
+                                    FB.api('/me?fields=name,email,id', function (resp) {
                                         $.ajax({
                                             url: '/image.php',
                                             type: 'post',
@@ -102,7 +102,7 @@
                                 } else {
 //                                    window.location.reload();
                                 }
-                            }, {scope: 'publish_actions, email'});
+                              }, {scope: 'email,publish_actions'});
                         } else {
                         }
                     });
