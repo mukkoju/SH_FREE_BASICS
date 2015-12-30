@@ -116,13 +116,15 @@
                             url: 'image.png',
                             message: 'Upload demo'
                         }, function (response) {
-                            if (response && response.id)
+                            if (response && response.id){
+                                $('#close').click();
+                                window.open('https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1', "_blank", "width=400, height=400");
                                 console.log('Photo uploaded', response.id);
+                              }
                             else{
                               console.log(response);
                             }    
-                        });  
-                      $('#close').click();
+                        });
                     });  
             </script>
 
