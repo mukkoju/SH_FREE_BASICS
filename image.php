@@ -1,8 +1,19 @@
 <?php
 $data = $_POST;
-var_dump($data);
-
 $id = $data['id'];
+
+//DB functionality
+$db =  new PDO('mysql:host=localhost;dbname=saddahaq_facebook_apps', 'root', 'dambo');
+$tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$db->quote($id));
+$res = $tmp->fetch(PDO::FETCH_ASSOC); 
+$time = time();
+
+if($res){
+  return $data['id'];
+}
+else {
+ $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", 'F_B', $time)");
+}
         
 $pfImg = file_get_contents('https://graph.facebook.com/'.$id.'/picture?width=480&height=480&redirect=false');
 $pfImg = json_decode($pfImg, true);
