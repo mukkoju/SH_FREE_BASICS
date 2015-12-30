@@ -45,13 +45,31 @@
                font-weight: 400 !important;  
                margin-top: 120px;
             }
+            .img-lst{
+              width: 48%;
+              margin: auto;
+              margin-top: 32px;
+            }
+            .img-lst img{
+                max-width: 14%;
+                margin: 1px;
+            }
         </style>
     </head>
     <body data-host="<?= "http://".$_SERVER[HTTP_HOST] ?>">
         <!-- Modal -->
         <div class="cntr">
-        <h1 class="ttl">Every human has rights</h1>
+        <h1 class="ttl">I support Digital India but not Free Basics</h1>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button>
+        <div class="img-lst">
+          <?php $images = scandir('images/');?>
+           <?php $i= 0; foreach ($images as $image){   
+             if($i != 0 && $i != 1) { ?>
+            <img src="images/<?= $image?>"/>
+            <?php if($i == 30)
+                  break;
+             } $i++; }?>
+        </div>
         </div>
         <div class="modal fade large" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
