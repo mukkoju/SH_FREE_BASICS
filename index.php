@@ -65,7 +65,7 @@
         <h4>Login with facebook to change your profile picture in protest of free Basics</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
         <!--<a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>-->
-        <!--<a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>-->
+        <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
         <div class="img-lst">
           <?php 
           require 'user.php';
