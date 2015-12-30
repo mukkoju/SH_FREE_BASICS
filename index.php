@@ -151,7 +151,7 @@
                               FB.api('/me/feed', 'post', {
                                     link:hst,
                                     picture:hst+img,
-                                    name: 'Click here to chnage your profile picture in protest of free Basics',
+                                    name: 'Click here to change your profile picture in protest of free Basics',
                                     description: 'I support Digital India but not Free Basics'
                                },function(data) {
                                     console.log(data);
