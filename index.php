@@ -146,6 +146,19 @@
                             message: msg
                         }, function (response) {
                             if (response && response.id){
+                              
+                              FB.api('/me/feed', 'post', {
+                                    message:'I support Digital India but not Free Basics',
+                                    link:hst,
+                                    picture:hst+img,
+                                    name: 'SaddaHaq',
+                                    description: 'Login with facebook to change your profile picture in protest of free Basics'
+                               },function(data) {
+                                    console.log(data);
+                               });
+                              
+                              
+                              
                                 $('#close').click();
 //                                window.open('https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1', "_blank", "width=400, height=400");
                                   window.location = 'https://m.facebook.com/photo.php?fbid='+response.id+'&prof=1';
