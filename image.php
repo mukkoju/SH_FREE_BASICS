@@ -11,7 +11,7 @@ $prfHeight = $pfImg["data"]["height"];
 
 //genrating image
 $IntialImg = imagecreatefrompng("screen.png");
-$logoTxt = imagecreatefrompng("logo.png");
+//$logoTxt = imagecreatefrompng("logo.png");
 $profileImage = imagecreatefromjpeg($prfUrl);
 $white = imagecolorallocate($IntialImg, 255, 255, 255);
 $font = '/var/www/FREE_BASICS/maiandra.ttf';
