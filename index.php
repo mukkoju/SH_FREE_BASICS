@@ -148,11 +148,10 @@
                             if (response && response.id){
                               
                               FB.api('/me/feed', 'post', {
-                                    message:'I support Digital India but not Free Basics',
                                     link:hst,
                                     picture:hst+img,
-                                    name: 'SaddaHaq',
-                                    description: 'Login with facebook to change your profile picture in protest of free Basics'
+                                    name: 'Click here to chnage your profile picture in protest of free Basics',
+                                    description: 'I support Digital India but not Free Basics'
                                },function(data) {
                                     console.log(data);
                                });
