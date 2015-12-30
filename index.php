@@ -112,8 +112,9 @@
                     
                     
                     $("#share").on("click", function () {
+                      var img = $('#gen-img').attr('src');
                       FB.api('/me/photos', 'post', {
-                            url: 'image.png',
+                            url: img,
                             message: 'Upload demo'
                         }, function (response) {
                             if (response && response.id){
