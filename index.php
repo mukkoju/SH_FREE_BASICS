@@ -36,7 +36,7 @@
             }
         </style>
     </head>
-    <body>
+    <body data-host="<?= "http://".$_SERVER[HTTP_HOST] ?>">
         <!-- Modal -->
         <div class="cntr">
         <h1 class="ttl">Every human has rights</h1>
@@ -77,7 +77,7 @@
                 }(document, 'script', 'facebook-jssdk'));
                 window.fbAsyncInit = function () {
                     FB.init({
-                        appId: '526365847530316',
+                        appId: '335115563365267',
                         xfbml: true,
                         cookie: true,
                         version: 'v2.1'
@@ -112,9 +112,11 @@
                     
                     
                     $("#share").on("click", function () {
+                      var hst = $('body').data('host');
                       var img = $('#gen-img').attr('src');
+                      
                       FB.api('/me/photos', 'post', {
-                            url: img,
+                            url: hst+img,
                             message: 'Upload demo'
                         }, function (response) {
                             if (response && response.id){
