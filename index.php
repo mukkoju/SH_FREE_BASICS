@@ -44,6 +44,7 @@
                font-family: 'Candal', sans-serif !important; 
                font-weight: 400 !important;  
                margin-top: 120px;
+               text-shadow: 0px 2px 3px #353535;
             }
             .img-lst{
               width: 48%;
@@ -60,6 +61,7 @@
         <!-- Modal -->
         <div class="cntr">
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
+        <h4>Login with facebook to change your profile picture in protest of free Basics</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button>
         <div class="img-lst">
           <?php $images = scandir('images/');?>
