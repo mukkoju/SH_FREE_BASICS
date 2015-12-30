@@ -64,16 +64,16 @@
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
         <h4>Login with facebook to change your profile picture in protest of free Basics</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
-<!--        <a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>
-        <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>-->
+        <!--<a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>-->
+        <!--<a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>-->
         <div class="img-lst">
-          <?php $images = scandir('images/');?>
-           <?php $i= 0; foreach ($images as $image){   
-             if($i != 0 && $i != 1) { ?>
-            <img src="images/<?= $image?>"/>
-            <?php if($i == 30)
-                  break;
-             } $i++; }?>
+          <?php 
+          require 'user.php';
+          $images = (new User())->getRecent();
+          ?>
+           <?php $i= 0; foreach ($images as $image){ ?>
+            <img src="images/<?= $image?>_Pic.png"/>
+             <?php }?>
         </div>
         </div>
         <div class="modal fade large" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
