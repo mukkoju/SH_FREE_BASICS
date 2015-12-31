@@ -75,7 +75,7 @@
         <h1 class="ttl">I support Digital India but not Free Basics</h1>
         <h4 class="sb-ttl">Login with facebook to change your profile picture in protest of free Basics</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
-        <!--<a href="/debate.php" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>-->
+        <a href="/debate.php" class="btn btn-success btn-md" id="" style="margin-top: 24px;">THE DEBATE</a>
         <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
         <div class="img-lst">
           <?php 
