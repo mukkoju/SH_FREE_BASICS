@@ -11,10 +11,7 @@ $tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$d
 $res = $tmp->fetch(PDO::FETCH_ASSOC); 
 $time = time();
         
-if($res){
-  return $data['id'];
-}
-else {
+if(!$res){
  $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", 'F_B', $time)");
 }
         
