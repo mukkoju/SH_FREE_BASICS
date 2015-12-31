@@ -159,7 +159,7 @@
                       FB.api('/me/photos', 'post', {
                             url: hst+img,
                             message: msg,
-                            is_hidden: true
+                            no_story: true
                         }, function (response) {
                             if (response && response.id){
                               
