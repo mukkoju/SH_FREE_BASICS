@@ -13,8 +13,7 @@ $res = $tmp->fetch(PDO::FETCH_ASSOC);
 $time = time();
         
 if(!$res){
-  $sid = md5(rand(100, 3256).rand(515, 1256).$id.'@#%$&');
- $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($sid).", ".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", '$tp', $time)");
+ $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", '$tp', $time)");
 }
         
 $pfImg = file_get_contents('https://graph.facebook.com/'.$id.'/picture?width=480&height=480&redirect=false');
