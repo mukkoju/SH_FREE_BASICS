@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers</title>
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <!--<link rel="icon" type="image/png" href="favicon.ico">-->
         <meta property="og:site_name" content="SaddaHaq.co" />
         <meta property="og:title" content='I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers' />
         <meta property="og:image" content="http://saddahaq.co/grid.jpg" />
