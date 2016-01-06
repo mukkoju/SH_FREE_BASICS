@@ -6,13 +6,13 @@
         <meta property="og:title" content='I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers' />
         <meta property="og:image" content="http://saddahaq.co/grid.jpg" />
         <meta property="og:url" content='http://saddahaq.co/martyrs.php' />
-        <meta property="og:description" content='Login with facebook to change your profile picture to mark your condolence of Martyrs' />
+        <meta property="og:description" content='Login with facebook to change your profile picture to mark your condolence' />
         <!--twitter-->
         <meta property="twiter:twitter:domain" content="SaddaHaq.co" />
         <meta property="twiter:title" content='I support Digital India but not Free Basics' />
         <meta property="twiter:image:src" content="http://saddahaq.co/grid.jpg" />
         <meta property="twiter:url" content='http://saddahaq.co/martyrs.php' />
-        <meta property="twiter:description" content='Login with facebook to change your profile picture to mark your condolence of Martyrs' />
+        <meta property="twiter:description" content='Login with facebook to change your profile picture to mark your condolence' />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
@@ -75,7 +75,7 @@
         <!-- Modal -->
         <div class="cntr">
         <h1 class="ttl">I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers</h1>
-        <h4 class="sb-ttl">Login with facebook to change your profile picture to mark your condolence of Martyrs</h4>
+        <h4 class="sb-ttl">Login with facebook to change your profile picture to mark your condolence</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
         <a href="https://www.saddahaq.com/please-ensure-that-there-are-no-more-delays-in-procurement-of-assault-rifles-and-bullet-proof-vests-for-our-armed-forces" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
         </div>
@@ -158,7 +158,7 @@
                               FB.api('/me/feed', 'post', {
                                     link:hst,
                                     picture:hst+img,
-                                    name: 'Click here to change your profile picture to mark your condolence of Martyrs',
+                                    name: 'Click here to change your profile picture to mark your condolence',
                                     description: 'I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers'
                                },function(data) {
                                     console.log(data);
