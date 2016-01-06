@@ -1,18 +1,19 @@
 <?php
 $data = $_POST;
 $id = $data['id'];
+$tp = $_POST['tp'] ? $_POST['tp'] : 'F_B';
 if(!isset($_POST) || empty($id)){
   return;
   exit();
 }
 //DB functionality
 $db =  new PDO('mysql:host=localhost;dbname=saddahaq_facebook_apps', 'root', 'vivenfarms');
-$tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$db->quote($id));
+$tmp = $db->query("SELECT _ID_ FROM table_free_basics_saddahaq WHERE _ID_ = ".$db->quote($id)." AND _Typ_ = ".$db->quote($tp));
 $res = $tmp->fetch(PDO::FETCH_ASSOC); 
 $time = time();
         
 if(!$res){
- $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", 'F_B', $time)");
+ $tmp = $db->query("INSERT INTO table_free_basics_saddahaq VALUES (".$db->quote($id).", ".$db->quote($data['email']).", ".$db->quote($data['name']).", '$tp', $time)");
 }
         
 $pfImg = file_get_contents('https://graph.facebook.com/'.$id.'/picture?width=480&height=480&redirect=false');
@@ -44,7 +45,7 @@ imagecopyresized($profileImage, $IntialImg, 0, 0, 0, 0, $pfImg["data"]["width"],
 //imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
 
 
-$imageName = 'images/'.$id.'_Pic.png';
+$imageName = 'images/'.$id.'_'.($tp?$tp:'Pic').'.png';
 
 //save image
 header('Content-type: image/png');
