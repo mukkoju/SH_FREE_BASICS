@@ -30,7 +30,8 @@ else{
 }
 
 //genrating image
-$IntialImg = imagecreatefrompng("screen1.png");
+$screen = $tp != 'F_B' ? $tp.'.png' : 'screen1.png';
+$IntialImg = imagecreatefrompng($screen);
 //$logoTxt = imagecreatefrompng("logo.png");
 $profileImage = imagecreatefromjpeg($prfUrl);
 $white = imagecolorallocate($IntialImg, 255, 255, 255);
@@ -45,7 +46,7 @@ imagecopyresized($profileImage, $IntialImg, 0, 0, 0, 0, $pfImg["data"]["width"],
 //imagecopymerge($IntialImg, $logoTxt, 0, 0, 0, 0, 217, 115, 90);
 
 
-$imageName = 'images/'.$id.'_'.($tp?$tp:'Pic').'.png';
+$imageName = 'images/'.$id.'_'.($tp != 'F_B' ? $tp : 'Pic').'.png';
 
 //save image
 header('Content-type: image/png');
