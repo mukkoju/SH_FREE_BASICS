@@ -129,8 +129,8 @@
                                           type: 'post',
                                           data: resp,
                                           success: function(r) {
-                                            $('#gen-img').attr('src', '/images/'+resp.id+'_Pic.png');
-                                            $('.modal').modal('show');  
+                                            $('#gen-img').attr('src', '/images/'+resp.id+'_MRTY.png');
+                                            $('.modal').modal('show');
                                           }
                                       });
                                   });
