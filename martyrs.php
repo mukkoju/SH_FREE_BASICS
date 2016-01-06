@@ -78,6 +78,16 @@
         <h4 class="sb-ttl">Login with facebook to change your profile picture to mark your condolence</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
         <a href="https://www.saddahaq.com/please-ensure-that-there-are-no-more-delays-in-procurement-of-assault-rifles-and-bullet-proof-vests-for-our-armed-forces" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
+        <div class="img-lst">
+          <?php 
+          require 'user.php';
+          $images = (new User())->getRecent('MRTY');
+          ?>
+           <div style="display: none"><?php var_dump($images)?></div>
+           <?php $i= 0; foreach ($images as $image){ ?>
+            <img src="images/<?= $image['id']?>_Pic.png"/>
+             <?php }?>
+        </div>
         </div>
         <div class="modal fade large" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">

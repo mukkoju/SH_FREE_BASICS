@@ -80,7 +80,7 @@
         <div class="img-lst">
           <?php 
           require 'user.php';
-          $images = (new User())->getRecent();
+          $images = (new User())->getRecent('F_B');
           ?>
            <div style="display: none"><?php var_dump($images)?></div>
            <?php $i= 0; foreach ($images as $image){ ?>
