@@ -9,7 +9,7 @@
         <meta property="og:description" content='Login with facebook to change your profile picture to mark your condolence' />
         <!--twitter-->
         <meta property="twiter:twitter:domain" content="SaddaHaq.co" />
-        <meta property="twiter:title" content='I support Digital India but not Free Basics' />
+        <meta property="twiter:title" content='I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers' />
         <meta property="twiter:image:src" content="http://saddahaq.co/grid.jpg" />
         <meta property="twiter:url" content='http://saddahaq.co/martyrs.php' />
         <meta property="twiter:description" content='Login with facebook to change your profile picture to mark your condolence' />
