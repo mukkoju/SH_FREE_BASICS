@@ -85,7 +85,7 @@
           ?>
            <div style="display: none"><?php var_dump($images)?></div>
            <?php $i= 0; foreach ($images as $image){ ?>
-            <img src="images/<?= $image['id']?>_Pic.png"/>
+            <img src="images/<?= $image['id']?>_MRTY.png"/>
              <?php }?>
         </div>
         </div>
