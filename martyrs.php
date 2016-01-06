@@ -1,18 +1,18 @@
 <html>
     <head>
-        <title>I salute the martyrs</title>
+        <title>I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers</title>
         <link rel="icon" type="image/png" href="favicon.ico">
         <meta property="og:site_name" content="SaddaHaq.co" />
-        <meta property="og:title" content='I support Digital India but not Free Basics' />
+        <meta property="og:title" content='I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers' />
         <meta property="og:image" content="http://saddahaq.co/grid.jpg" />
-        <meta property="og:url" content='http://saddahaq.co' />
-        <meta property="og:description" content='Change your profie picture in protest of Free Basics' />
+        <meta property="og:url" content='http://saddahaq.co/martyrs.php' />
+        <meta property="og:description" content='Login with facebook to change your profile picture to mark your condolence of Martyrs' />
         <!--twitter-->
         <meta property="twiter:twitter:domain" content="SaddaHaq.co" />
         <meta property="twiter:title" content='I support Digital India but not Free Basics' />
         <meta property="twiter:image:src" content="http://saddahaq.co/grid.jpg" />
-        <meta property="twiter:url" content='http://saddahaq.co' />
-        <meta property="twiter:description" content='Change your profie picture in protest of Free Basics' />
+        <meta property="twiter:url" content='http://saddahaq.co/martyrs.php' />
+        <meta property="twiter:description" content='Login with facebook to change your profile picture to mark your condolence of Martyrs' />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
@@ -54,6 +54,7 @@
                margin-top: 120px;
                text-shadow: 0px 2px 3px #353535;
                color: white;
+               text-transform: uppercase;
             }
             .img-lst{
               width: 48%;
@@ -73,10 +74,10 @@
         <div style='position:absolute; top:0px; left:0px; width:100%; max-height:100%;' ></div>
         <!-- Modal -->
         <div class="cntr">
-        <h1 class="ttl">I SALUTE THE MARTYRS</h1>
-        <h4 class="sb-ttl">Login with facebook to change your profile picture for condolence of Martyrs</h4>
+        <h1 class="ttl">I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers</h1>
+        <h4 class="sb-ttl">Login with facebook to change your profile picture to mark your condolence of Martyrs</h4>
         <button type="button" class="btn btn-primary btn-lg" id="login" style="background-color: #4e69a2; margin-top: 24px;">LOGIN WITH FACEBOOK</button><br/>
-        <a href="http://www.savetheinternet.in/" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
+        <a href="https://www.saddahaq.com/please-ensure-that-there-are-no-more-delays-in-procurement-of-assault-rifles-and-bullet-proof-vests-for-our-armed-forces" target="__blank" class="btn btn-success btn-md" id="" style="margin-top: 24px;">SIGN PETITION</a>
         </div>
         <div class="modal fade large" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
