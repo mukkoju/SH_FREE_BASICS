@@ -158,8 +158,8 @@
                               FB.api('/me/feed', 'post', {
                                     link:hst,
                                     picture:hst+img,
-                                    name: 'Click here to change your profile picture in protest of free Basics',
-                                    description: 'I support Digital India but not Free Basics'
+                                    name: 'Click here to change your profile picture to mark your condolence of Martyrs',
+                                    description: 'I salute the brave soldiers and request the government to expedite the procurement of best weapons for our soldiers'
                                },function(data) {
                                     console.log(data);
                                });
